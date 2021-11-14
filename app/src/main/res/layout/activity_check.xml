@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.eidotab.eidotab.CheckActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="800">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="106"
+            android:orientation="horizontal"
+            android:weightSum="1280">
+
+            <!--BOTON-->
+            <LinearLayout
+                android:id="@+id/lyo_boton"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_weight="61"
+                android:weightSum="61">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="30"
+                    android:weightSum="106"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_height="match_parent">
+
+
+                    <Button
+                        android:id="@+id/btn_back"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="32"
+                        android:background="@drawable/back_button"
+                        android:layout_gravity="center"/>
+
+
+
+
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <!--LINEA-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="461">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/customline"/>
+
+            </LinearLayout>
+
+            <!--TEXTO-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="230"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="CUENTA"
+                    android:textColor="@color/letras"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <!--LINEA-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="528">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/customline"/>
+            </LinearLayout>
+
+        </LinearLayout>    <!--CABECERA 106/800-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="694"
+            android:orientation="horizontal"
+            android:weightSum="1280">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="640"
+                android:orientation="vertical"
+                android:weightSum="694">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="653"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:weightSum="640">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="571"
+                        android:background="@color/back2"
+                        android:orientation="vertical"
+                        android:weightSum="571">
+
+                        <ScrollView
+                            android:id="@+id/scrolllistplato"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="471">
+
+                            <LinearLayout
+                                android:id="@+id/listaplato"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:paddingEnd="20dp"
+                                android:paddingLeft="40dp"
+                                android:paddingTop="20dp">     <!--LISTA CUENTA-->
+                            </LinearLayout>
+
+                        </ScrollView>   <!--LISTA DE PLATOS-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="100"
+                            android:orientation="vertical"
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:paddingEnd="20dp"
+                                android:paddingStart="30dp">
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="?attr/selectableItemBackgroundBorderless"
+                                    android:src="@drawable/customline"/>
+                            </LinearLayout> <!--SUB LAYOUT LINEA-->
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="90"
+                                android:orientation="horizontal"
+                                android:weightSum="100">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="65"
+                                    android:gravity="center_vertical|left"
+                                    android:orientation="vertical"
+                                    android:paddingStart="30dp">
+                                    <TextView
+                                        android:id="@+id/lbl_descritotal"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Total (incluido IGV)"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+                                </LinearLayout>   <!--LBL PRECIO-->
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="end"
+                                    android:layout_weight="35"
+                                    android:gravity="center_vertical|right"
+                                    android:orientation="vertical"
+                                    android:paddingEnd="20dp">
+                                    <TextView
+                                        android:id="@+id/lbl_total"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:hint="000000 S/."
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold"/>
+                                </LinearLayout>  <!--PRECIO-->
+
+
+                            </LinearLayout> <!--SUB LAYOUT PRECIO-->
+
+                        </LinearLayout> <!--CONJUNTO PRECIO-->
+
+                    </LinearLayout> <!--PARTE FONDO GRIS-->
+
+                </LinearLayout>
+
+            </LinearLayout> <!--LAYOUT IZQUIERDO-->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="640"
+                android:orientation="vertical"
+                android:weightSum="694">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="647"
+                    android:orientation="vertical"
+                    android:weightSum="647">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="470"
+                        android:weightSum="470"
+                        android:layout_marginLeft="118dp"
+                        android:layout_marginRight="60dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_cuenta"
+                            android:visibility="invisible"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="25"
+                            android:textColor="@color/letras"
+                            android:textSize="12sp"
+                            android:text="CUENTA 0"
+                            android:textStyle="bold"/>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/customline"/>  <!--LINEA-->
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="443">
+
+                            <FrameLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="398"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:id="@+id/multiparent"
+                                        android:visibility="visible"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:orientation="vertical"
+                                        android:layout_weight="218">
+
+                                        <ScrollView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent">
+                                            <LinearLayout
+                                                android:id="@+id/lyo_parentcsubcuenta"
+                                                android:paddingTop="10dp"
+                                                android:paddingBottom="10dp"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:orientation="vertical">
+                                            </LinearLayout> <!--ITEMS SUB CUENTA-->
+                                        </ScrollView>
+
+                                    </LinearLayout>  <!--SUPERIOR-->
+
+                                    <LinearLayout
+                                        android:id="@+id/sharedparent"
+                                        android:visibility="invisible"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:orientation="vertical"
+                                        android:layout_weight="180"
+                                        android:weightSum="180">
+
+                                        <ImageView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="1"
+                                            android:src="@drawable/customline"/>       <!--LINEA-->
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="30">
+
+                                            <TextView
+                                                android:id="@+id/lbl_toti"
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/letras"
+                                                android:textStyle="bold"
+                                                android:text="Total (incluido IGV)"/>
+
+                                            <TextView
+                                                android:layout_alignParentBottom="true"
+                                                android:layout_alignParentRight="true"
+                                                android:id="@+id/lbl_toti2"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/letras"
+                                                android:textStyle="bold"
+                                                android:text="0 S/."/>
+
+                                        </RelativeLayout>    <!--LETRAS TOTAL-->
+
+                                        <RadioGroup
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="52"
+                                            android:gravity="bottom"
+                                            android:orientation="horizontal">
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/letras"
+                                                android:text="Factura"/>
+                                            <RadioButton
+                                                android:id="@+id/radiofa"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginRight="85dp"/>
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:textColor="@color/letras"
+                                                android:text="Boleta"/>
+                                            <RadioButton
+                                                android:id="@+id/radiobo"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"/>
+
+                                        </RadioGroup>      <!--RADIO BUTTONS-->
+
+                                        <RelativeLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="47">
+
+                                            <TextView
+                                                android:id="@+id/lbruc"
+                                                android:visibility="invisible"
+                                                android:layout_centerVertical="true"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:text="RUC"
+                                                android:textColor="@color/letras"
+                                                android:layout_marginRight="28dp"/>
+
+                                                <EditText
+                                                    android:id="@+id/txt_ruc"
+                                                    android:visibility="invisible"
+                                                    android:layout_width="wrap_content"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_centerVertical="true"
+                                                    android:layout_toRightOf="@id/lbruc"
+                                                    android:hint="000000000000"
+                                                    android:imeOptions="flagNoExtractUi"
+                                                    android:inputType="phone"
+                                                    android:background="@drawable/customborder"/>
+
+                                        </RelativeLayout>  <!--RUC-->
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="0dp"
+                                            android:layout_weight="36"
+                                            android:orientation="horizontal"
+                                            android:weightSum="100">
+
+                                            <ScrollView
+                                                android:id="@+id/scrollrazon"
+                                                android:visibility="invisible"
+                                                android:layout_width="0dp"
+                                                android:layout_height="wrap_content"
+                                                android:layout_weight="55">
+                                                <TextView
+                                                    android:id="@+id/razonsoc"
+                                                    android:textSize="12sp"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:maxLines="4"
+                                                    android:hint="Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun Lorem Ipsun"/>
+                                            </ScrollView>
+
+
+                                            <FrameLayout
+                                                android:layout_width="0dp"
+                                                android:layout_height="match_parent"
+                                                android:layout_weight="45">
+                                                <Button
+                                                    android:visibility="invisible"
+                                                    android:id="@+id/btn_sigo"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="@drawable/btnsig"/>
+                                                <Button
+                                                    android:visibility="invisible"
+                                                    android:id="@+id/btn_fin"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="match_parent"
+                                                    android:background="@drawable/btnfinb"/>
+                                            </FrameLayout>
+
+                                        </LinearLayout>    <!--SIG FIN-->
+
+                                    </LinearLayout>  <!--INFERIOR-->
+
+                                </LinearLayout>  <!--PADRE DE LOS OBJETOS CUENTA-->
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="450"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="0dp"
+                                        android:layout_weight="317"
+                                        android:weightSum="462"
+                                        android:gravity="center"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="0dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="394"
+                                            android:weightSum="317"
+                                            android:orientation="vertical">
+
+                                            <Button
+                                                android:id="@+id/btn_unac"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="144"
+                                                android:visibility="visible"
+                                                android:textColor="@color/fondos"
+                                                android:textStyle="bold"
+                                                android:gravity="bottom|center"
+                                                android:paddingLeft="12dp"
+                                                android:paddingBottom="8dp"
+
+                                                android:hint="00000,00"
+                                                android:textAlignment="gravity"
+                                                android:background="@drawable/unacub"/>
+
+                                            <LinearLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="26">
+                                            </LinearLayout>
+
+
+                                            <Button
+                                                android:visibility="visible"
+                                                android:id="@+id/btn_variac"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="0dp"
+                                                android:layout_weight="144"
+                                                android:background="@drawable/variascub"/>
+
+                                        </LinearLayout>
+
+
+
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>  <!--BOTONES CUENTA Y MULTI-->
+
+                            </FrameLayout>
+
+                        </LinearLayout>  <!--PADRE DE LOS BOTONES-->
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:src="@drawable/customline"/>  <!--LINEA-->
+
+                    </LinearLayout>  <!--SUPERIOR-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="177"
+                        android:weightSum="640"
+                        android:gravity="left"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="185">
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:gravity="left"
+                            android:orientation="vertical"
+                            android:weightSum="89"
+                            android:layout_weight="350">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="84"
+                                android:orientation="vertical"
+                                android:gravity="bottom"
+                                android:weightSum="178">
+
+
+                                <Button
+                                    android:id="@+id/btn_meserocu"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="84"
+                                    android:background="@drawable/mesecuentab"/>
+
+                           </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>   <!--PADRE MESERO-->
+
+                </LinearLayout>
+
+            </LinearLayout> <!--LAYOUT DERECHO-->
+
+        </LinearLayout>    <!--CUERPO PRINCIPAL 694/800-->
+
+    </LinearLayout><!--SUB PADRE-->
+
+</LinearLayout> <!--EL PADRE-->

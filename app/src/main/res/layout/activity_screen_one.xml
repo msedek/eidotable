@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.eidotab.eidotab.ScreenOne"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/p101"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <LinearLayout
+            android:id="@+id/lyoidioma"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            android:layout_weight="30">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="42">
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_esp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:scaleType="fitStart"
+                android:src="@drawable/spabtn"
+                android:visibility="invisible"
+                android:layout_marginTop="86dp"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="2">
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btn_eng"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:scaleType="fitStart"
+                android:src="@drawable/engbtn"
+                android:layout_marginTop="86dp"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        </LinearLayout>
+
+
+<LinearLayout
+    android:id="@+id/itouch"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="70"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="37.7"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/p102">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/p1logo"
+            android:scaleType="fitCenter"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lyobotones"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="62.3"
+        android:weightSum="100"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="14">
+        </LinearLayout>
+
+
+<!--        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/logoetab"
+            android:layout_gravity="center"
+            android:layout_weight="12"/>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="12">
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="16">
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="58"
+            android:orientation="vertical">
+
+
+            <ImageButton
+                android:id="@+id/btn_ordenar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/inibtn"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

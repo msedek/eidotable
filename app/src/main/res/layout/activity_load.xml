@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.eidotab.eidotab.LoadActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/loading">
+
+        <TextView
+            android:id="@+id/txtload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cargando por favor espere"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_marginRight="10dp"/>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loadanimation"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/txtload"
+            app:indicatorName="BallClipRotateMultipleIndicator"/>
+
+
+        <EditText
+            android:id="@+id/txt_mesa"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:hint="00"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:inputType="number"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"/>
+
+        <Button
+            android:id="@+id/btn_mesa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aceptar"
+            android:visibility="invisible"
+            android:layout_toLeftOf="@+id/txt_mesa"
+            android:layout_alignParentBottom="true"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

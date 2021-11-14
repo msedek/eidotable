@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">EidoTab</string>
+<!--        <string name="iptab">http://192.168.0.34:3000/</string>
+        <string name="iptab2">http://192.168.0.34/</string>-->
+    <string name="iptab">http://35.190.140.151:3000/</string>
+    <string name="iptab2">http://35.190.140.151/</string>
+
+
+    <string name="txtnosotros">¡El verdadero lugar de la comida clásica americana! …una atmósfera de los 50"'"s llena de parrillitas, hamburguesas, hot dogs y más.</string>
+    <string name="duratoast">700</string>
+    <string name="title_activity_test">TestActivity</string>
+
+
+</resources>

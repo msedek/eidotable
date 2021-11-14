@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1128">
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="616"
+            android:weightSum="616"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="517"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="517">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageSuge"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitStart"
+                            android:src="@drawable/placeholder3"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/btafather"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/lbl_precio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:maxLines="1"
+                            android:background="@color/back"
+                            android:layout_gravity="right"
+                            android:textStyle="bold"
+                            android:textColor="@color/letras"
+                            android:hint="XX S"/>
+
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+     </LinearLayout>
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="60">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="517"
+        android:layout_weight="452">
+            <!--TITULO PLATO-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="55">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textSize="22sp"
+                    android:maxLines="1"
+                    android:textColor="@color/letras"
+                    android:text="DETALLES"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+
+            <!--DESCRIPCION PLATO-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:gravity="top"
+                android:layout_weight="77">
+                <TextView
+                    android:id="@+id/lbl_descriplato"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="top"
+                    android:layout_gravity="left"
+                    android:textSize="16sp"
+                    android:maxLines="4"
+                    android:textColor="@color/letras"
+                    android:hint="DESCRIPCION DEL PLATO"/>
+            </LinearLayout>
+
+            <!--INGREDIENTES Y ACOMPAÑANTES-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="51">
+                <TextView
+                    android:id="@+id/lbl_ingre"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/letras"
+                    android:text="INGREDIENTES Y ACOMPAÑANTES"/>
+            </LinearLayout>
+
+            <!--SCROLL INGREDIENTES Y ACOMPAÑANTES-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="453"
+                android:layout_weight="90">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="226.5">
+                    <ScrollView
+                        android:id="@+id/scroll_iil"
+                        android:scrollbarDefaultDelayBeforeFade="1000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/scroll_ii"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="226.5">
+                    <ScrollView
+                        android:id="@+id/scroll_idl"
+                        android:layout_width="match_parent"
+                        android:scrollbarDefaultDelayBeforeFade="1000"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/scroll_id"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--ADICIONALES-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_weight="57">
+                <TextView
+                    android:id="@+id/lbl_adic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_gravity="left"
+                    android:textSize="18sp"
+                    android:maxLines="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/letras"
+                    android:text="ADICIONALES"/>
+            </LinearLayout>
+
+            <!--SCROLL DE ADICIONALES-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:weightSum="453"
+                android:layout_weight="90">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="226.5">
+                    <ScrollView
+                        android:id="@+id/scroll_ail"
+                        android:layout_width="match_parent"
+                        android:scrollbarDefaultDelayBeforeFade="1000"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/scroll_ai"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="226.5">
+                    <ScrollView
+                        android:id="@+id/scroll_adl"
+                        android:layout_width="match_parent"
+                        android:scrollbarDefaultDelayBeforeFade="1000"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:id="@+id/scroll_ad"
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content">
+                        </LinearLayout>
+                    </ScrollView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--PRECIO-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="104"
+                android:gravity="center_vertical"
+                android:weightSum="100"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/btn_add"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="30dp"
+                    android:layout_weight="57"
+                    android:layout_marginLeft="4dp">
+
+                    <ImageView
+                        android:id="@+id/btnadd"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/addplat"/>
+
+                    <TextView
+                        android:id="@+id/txtagr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AGREGAR AL PEDIDO"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/btnadd"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:textColor="@color/colorAccent"/>
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

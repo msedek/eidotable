@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1241"
+    tools:context="com.eidotab.eidotab.MainActivity"
+    android:orientation="horizontal">
+
+    <!--PARTE IZQUIERDA-->
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="633"
+        android:weightSum="775"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lyo_sugecheff"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="521"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:weightSum="521"
+                android:background="@drawable/imagesuge">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="116"
+                    android:orientation="horizontal"
+                    android:gravity="left"
+                    android:weightSum="521">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:background="@drawable/sugecheff"
+                        android:layout_weight="278">
+                    </ImageView>
+
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="18"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="236"
+            android:weightSum="633"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="0dp"
+                android:background="@drawable/menuppal"
+                android:layout_height="match_parent"
+                android:layout_weight="385"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="15"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_mesero"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="233"
+                android:background="@drawable/mesero"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!--PARTE DERECHA-->
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="19">
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="589"
+        android:weightSum="775"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/btn_mnos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="643"
+            android:weightSum="588"
+            android:orientation="horizontal"
+            android:background="@drawable/fotorest">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="284"
+                android:weightSum="643">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="128"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/sobre_nosotros"/>
+
+
+            </LinearLayout>
+
+
+
+
+
+             </LinearLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="vertical"
+                android:layout_weight="18">
+
+            </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="114"
+            android:scaleType="fitXY"
+            android:background="@drawable/adorno1"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

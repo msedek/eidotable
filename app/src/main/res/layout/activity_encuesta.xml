@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.eidotab.eidotab.EncuestaActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        android:orientation="vertical"
+        android:weightSum="800">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="106"
+            android:weightSum="1280"
+            android:orientation="horizontal">
+
+
+
+            <!--LINEA-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="382.5">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/customline"/>
+
+            </LinearLayout>
+
+            <!--TEXTO-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="515">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="AYÚDANOS CON UNA BREVE ENCUESTA"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/fondos"/>
+
+
+
+            </LinearLayout>
+
+            <!--LINEA-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:padding="10dp"
+                android:layout_height="match_parent"
+                android:layout_weight="382.5">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/customline"/>
+            </LinearLayout>
+
+        </LinearLayout>  <!--TOP-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="694"
+            android:padding="30dp"
+            android:orientation="vertical"
+            android:weightSum="100">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:weightSum="100"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="start|center"
+                    android:layout_weight="20">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="1 - VALORA LA CALIDAD DE TUS PLATOS"
+                        android:textColor="@color/fondos"
+                        android:textStyle="bold"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="80"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:id="@+id/lyoplatoleft"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:orientation="vertical">
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lyoplatoright"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:orientation="vertical">
+
+
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>  <!--MEDIUM-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="50"
+                android:orientation="vertical"
+                android:weightSum="100">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="55"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="2 - VALORA LA ATENCIÓN DE NUESTRO PERSONAL"
+                        android:textColor="@color/fondos"
+                        android:textStyle="bold"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingpersonal"
+                        android:layout_width="0dp"
+                        android:layout_weight="27"
+                        android:progressDrawable="@drawable/ratingbaryellow"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:isIndicator="false"/>
+
+                    <TextView
+                        android:id="@+id/rbvalpersonal"
+                        android:layout_width="0dp"
+                        android:layout_weight="18"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:hint="muy lento"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/fondos"/>
+
+                </LinearLayout>     <!--2- -->
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="55"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="3 - EL TIEMPO EN EL QUE LLEGO TU ORDEN"
+                        android:textColor="@color/fondos"
+                        android:textStyle="bold"/>
+
+                    <RatingBar
+                        android:id="@+id/ratingtiempos"
+                        android:layout_width="0dp"
+                        android:layout_weight="27"
+                        android:progressDrawable="@drawable/ratingbaryellow"
+                        android:layout_height="wrap_content"
+                        android:numStars="5"
+                        android:stepSize="1"
+                        android:isIndicator="false"/>
+
+                    <TextView
+                        android:id="@+id/rbvaltiempos"
+                        android:layout_width="0dp"
+                        android:layout_weight="18"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:hint="muy lento"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/fondos"/>
+
+                </LinearLayout>     <!--3- -->
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="55"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="4 - COMENTARIOS Y SUGERENCIAS"
+                        android:textColor="@color/fondos"
+                        android:textStyle="bold"/>
+
+
+
+                </LinearLayout>     <!--4- -->
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="500dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:paddingStart="30dp"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="55"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:hint="escribe aqui"
+                        android:background="@drawable/editruc"
+                        android:textColor="@color/fondos"/>
+
+
+
+                </LinearLayout>     <!--5- -->
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="20"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="55"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:text="4 - COMENTARIOS Y SUGERENCIAS"
+                        android:textColor="@color/fondos"
+                        android:textStyle="bold"/>
+
+
+
+                </LinearLayout>     <!--6- -->
+
+            </LinearLayout>  <!--BOTTOM-->
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
